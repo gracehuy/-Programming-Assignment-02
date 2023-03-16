@@ -1,0 +1,64 @@
+<div class="container" style="width: 850pt; margin: auto">
+  <div class="row" style="width: 50pt; margin-left: 0.1px">
+    <a href="/" class="btn btn-light float-left">
+      Back
+    </a>
+  </div>
+  <div class="container" style="display: flex">
+    <div class="col-6" style="width: 10%">
+      <h3 style="width: 100pt">Task 3</h3>
+    </div>
+  </div>
+  
+    <div (click)="showPage2()">
+      <img *ngIf="Page1" src="/assets/P3-Duolingo Screens/IMG_6383.png" alt="image" class="responsive">
+    </div>
+  
+    <div>
+      <img *ngIf="Page2" src="/assets/P3-Duolingo Screens/IMG_6384.png" alt="usemap" usemap="#pg2_map" class="responsive">
+    </div>
+  
+    <div>
+      <img *ngIf="Page3" src="/assets/P3-Duolingo Screens/IMG_6385.png" alt="usemap" usemap="#pg3_map" class="responsive">
+    </div>
+  
+    <div>
+      <img *ngIf="Page4" src="/assets/P3-Duolingo Screens/IMG_6386.png" alt="usemap" usemap="#pg4_map" class="responsive">
+    </div>
+  
+    <div>
+      <img *ngIf="Page5" src="/assets/P3-Duolingo Screens/IMG_6389.png" alt="usemap" usemap="#pg5_map" class="responsive">
+    </div>
+  </div>
+  
+  
+  <map name="pg2_map">
+    <area shape="rect" coords="0,0, 450,450" alt="GFG1"
+          (click)="showPage3()"  target="_blank"/>
+    <area shape="rect" coords="0,450, 900,900" alt="GFG2"
+         (click)="showPage5()"  target="_blank"/>
+  </map>
+  
+  <map name="pg3_map">
+    <area shape="rect" coords="0,0, 450,450" alt="GFG1"
+          (click)="showPage4()"  target="_blank"/>
+    <area shape="rect" coords="0,450, 900,900" alt="GFG2"
+          (click)="backToPage2()"  target="_blank"/>
+  </map>
+  
+  <map name="pg4_map">
+    <area shape="rect" coords="0,0, 450,450" alt="GFG1"
+          (click)="showPage5()"  target="_blank"/>
+    <area shape="rect" coords="0,450, 900,900" alt="GFG2"
+          (click)="backToPage3()"  target="_blank"/>
+  </map>
+  
+  <map name="pg5_map">
+    <area shape="rect" coords="0,0, 450,450" alt="GFG1"
+          (click)="backToPage2()"  target="_blank"/>
+    <area shape="rect" coords="0,450, 900,900" alt="GFG2"
+          (click)="backToPage4()"  target="_blank"/>
+  </map>
+  
+  
+  

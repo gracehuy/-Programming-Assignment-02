@@ -1,0 +1,35 @@
+
+<div class="container" *ngIf="navService.visible">
+  <div class="row">
+    <div class="col-12">
+      <h3>Programming Assignment 2: Programming Practice</h3>
+      <h4> By Yue Hu </h4>
+      <ul class="list-group">
+        <li class="list-group-item"><a [routerLink]="['/t1']" >Task 1</a></li>
+        <li class="list-group-item"><a [routerLink]="['/t2']" >Task 2</a></li>
+        <li class="list-group-item"><a [routerLink]="['/t3']" >Task 3</a></li>
+        <li class="list-group-item"><a [routerLink]="['/t4']">Task 4</a></li>
+        <li class="list-group-item"><a [routerLink]="['/t5']">Task 5</a></li>
+        <li class="list-group-item"><a href="/t6">Task 6</a></li>
+        <li class="list-group-item"><a href="/t7">Task 7</a></li>
+        <li class="list-group-item"><a href="/t8">Task 8</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--<a href="/t1">Task 1</a>-->
+
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
+<!--  <div class="container px-5">-->
+<!--    <a class="navbar-brand" routerLinkActive="active" routerLink="/">Electric Transport</a>-->
+<!--    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>-->
+<!--    <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">-->
+<!--        <li class="nav-item"><a class="nav-link active" routerLinkActive="active" routerLink="/t1">Conversion</a></li>-->
+<!--        <li class="nav-item"><a class="nav-link active" routerLinkActive="active" routerLink="/vehicles">Transport Types</a></li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</nav>-->
+<router-outlet></router-outlet>
