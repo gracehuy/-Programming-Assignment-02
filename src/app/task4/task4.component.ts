@@ -25,6 +25,9 @@ export class Task4Component implements OnInit {
   }
 
   ngOnInit(): void {
+    setInterval(()=>{
+      this.time = new Date();
+    },1000);
     this.getWeatherDetails();
     this.nextDay.setDate(this.nextDay.getDate()+1);
   }
